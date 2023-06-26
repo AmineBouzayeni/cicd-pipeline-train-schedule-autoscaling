@@ -35,11 +35,11 @@ spec:
       - name: linuxacademycontent/train-schedule:autoscaling
         ports:
         - containerPort: 8080
-      imagePullSecrets:
-        - name: github-container-registry
-      resources:
+        resources:
         requests:
-          cpu: 200m  
+          cpu: 200m 
+      imagePullSecrets:
+        - name: github-container-registry 
 
 ---
 
@@ -60,4 +60,6 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: 50
+      target:
+        type: Utilization
+        averageUtilization: 50
