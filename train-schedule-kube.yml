@@ -32,7 +32,8 @@ spec:
         app: train-schedule
     spec:
       containers:
-      - name: linuxacademycontent/train-schedule:autoscaling
+      - name: train-schedule
+        image: linuxacademycontent/train-schedule:autoscaling
         ports:
         - containerPort: 8080
         resources:
