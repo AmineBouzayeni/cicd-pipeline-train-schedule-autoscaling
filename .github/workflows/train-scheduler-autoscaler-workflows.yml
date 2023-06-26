@@ -38,8 +38,8 @@ jobs:
       - name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v1'
         with:
-          workload_identity_provider: 'projects/535329069851/locations/global/workloadIdentityPools/github-actions/providers/github-actions-oidc'
-          service_account: '535329069851-compute@developer.gserviceaccount.com'
+          workload_identity_provider: 'projects/54598601140/locations/global/workloadIdentityPools/github-actions/providers/github-actions-oidc'
+          service_account: '54598601140-compute@developer.gserviceaccount.com'
           project_id: playground-s-11-19839254
       - name: Connect to GKE
         uses: google-github-actions/get-gke-credentials@v0
