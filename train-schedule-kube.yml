@@ -36,8 +36,8 @@ spec:
         ports:
         - containerPort: 8080
         resources:
-        requests:
-          cpu: 200m 
+          requests:
+            cpu: 200m 
       imagePullSecrets:
         - name: github-container-registry 
 
