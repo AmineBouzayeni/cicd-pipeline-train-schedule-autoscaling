@@ -45,7 +45,7 @@ spec:
 
 
 apiVersion: autoscaling/v2beta1
-kind: HorizentalPodAutoscaler
+kind: HorizontalPodAutoscaler
 metadata:
   name: train-scheduler-autoscaler
   namespace: default
